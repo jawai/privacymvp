@@ -1,0 +1,38 @@
+Policies
+<% if current_user %>
+  <h1>Privacy suite for <%= current_user.hic_name%></h1>
+  <p>Find me in app/views/home/index.html.erb</p>
+
+  <h1>Access and Correction Policy and Operating Practices</h1>
+  <h2>Policy Statements</h2>
+  <ol>
+    <li>
+      Patients may ask to see or get copies of their medical records.  They can ask us verbally or make a written request.
+    </li>
+    <li>
+      Patients may ask <%= current_user.hic_name %>  to correct their medical records if the information is out-of-date, inaccurate, or incomplete.
+    </li>
+    <li>
+      <%= current_user.hic_name %> must respond to all requests to see, get a copy of, or to correct the medical record within 30 calendar days. <%= current_user.hic_name %> must notify the patient that we require an additional 30 calendar days to respond if:
+      <ol>
+        <li>Responding within 30 calendar days would interfere with normal clinic functioning because finding or compiling the medical record is very complex; or</li>
+        <li>More time is needed to confirm whether some of the medical record should be withheld.</li>
+      </ol>
+    </li>
+    <li>
+      <%= current_user.hic_name %> may decide not to make a correction to a medical record if:
+      <ol>
+        <li>The information was received from another organization and <%= current_user.hic_name %> does not have enough information to know whether it should be corrected;</li>
+        <li>The correction is frivolous, vexatious, or requested in bad faith;</li>
+        <li>The medical record is not incorrect or incomplete; or</li>
+        <li>The information represents a clinical opinion that was made in good faith.</li>
+      </ol>
+    </li>
+    <li>
+      If the patient asks, <%= current_user.hic_name %> must note in the medical record if the patient asked for a correction but <%= current_user.hic_name %> refused to make the correction.
+    </li>
+    <li>
+      <%= current_user.hic_name %> may decide not to release some or all of the medical record if there is a good reason.  The reason must be consistent with PHIPA s52.
+    </li>
+  </ol>
+<% end %>
